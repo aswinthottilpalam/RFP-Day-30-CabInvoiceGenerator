@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace CabInvoiceGenerator
 {
-    internal class Ride
+    /// <summary>
+    /// Ride class to Set Data For Particular Ride.
+    /// </summary>
+    public class Ride
     {
+        //Variables
+        public double distance;
+        public int time;
+        
+        /// Parameter constructor for setting data
+        /// <param name="distance"></param>
+        /// <param name="time"></param>
+        public Ride (double distance, int time)
+        {
+            this.distance = distance;
+            this.time = time;
+        }
     }
 }
